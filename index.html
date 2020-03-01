@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CAPIDS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  
+  <header>
+    <div class="d-flex">
+        <nav class="white">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <div class="nav-wrapper navbar">
+            <a href="#!" class="brand-logo"><img src="images/logo.jfif" alt=""></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="Home">Home</a></li>
+              <li><a href="badges.html">Menu</a></li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right arrow">arrow_drop_down</i></a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Contact</a></li>
+              <!-- <li>
+                <a data-target="modal-signup" class="btn modal-trigger waves-effect waves-light btn btn-style signup_btn">Sign Up</a>
+                <a data-target="modal-login" class="btn modal-trigger waves-effect waves-light btn btn-style">Login</a>
+              </li> -->
+            </ul>
+          </div>
+        </nav>
+
+        <div>
+          <button class="user-profile p-0">
+            <i class="fa fa-user-circle-o"></i>
+            <nav>
+            <div>
+              <!-- <div class="name-circle">
+                <h4>V</h4>
+              </div> -->
+            </div>
+            </nav>
+          </button>
+        </div>
+      
+    </div>
+
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+          </ul>
+
+          <div id="modal-login" class="modal login width-40">
+            <div class="modal-content">
+                    <div class="modal-title loginMT p-5">
+                    <h5 class="modal-title authMT" id="ModalLongTitle">Welcome Back!</h5>
+                    <button type="button" class="modal-close close_btn">
+                      <span class="close_btn" aria-hidden="true">&times;</span>
+                    </button>
+                  </div>                     
+              </div>
+            </div> 
+    
+
+  <!-- side-bar -->
+
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+
+  <!-- Modal Signup/login -->
+  <div id="modal-signup" class="modal signup width-40">
+      <div class="modal-content">
+      
+          <div class="signupMT p-5">
+            <h5 class="modal-title" id="ModalLongTitle">Create Account</h5>
+            <button type="button" class="modal-close  close_btn" >
+                <span class="close_btn" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="" method="GET">
+            <div class="row no-gutters">
+              <div class="input-field col s12">
+              <label for="name-signup">Full Name</label>
+              <input id="name-signup" required type="text" class="validate" name="fullname">
+              </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="input-field col s12">
+                    <input id="email_signup" type="email" class="validate" required name="emailId">
+                    <label for="email_signup">Email</label>
+                  </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="input-field col s12 ">
+              <label for="mob-signup">Your Mobile Number including +91</label>
+              <input type="text" pattern="^((\+){1}91){1}[1-9]{1}[0-9]{9}$" class="validate" required 
+                minlength="13" name="mobileNumber" maxlength="13" class="validate"
+                 id="mob-signup">
+            </div>
+          </div>
+            
+            <div class="row no-gutters">
+            <div class="input-field col s12">
+                <select id="occ-signup" name="userType">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Student</option>
+                  <option value="2">Job</option>
+                  <option value="3">Other</option>
+                </select>
+                <label for="occ-signup">What do you do</label>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="input-field col s12">
+                    <input minlength="8" maxlength="20" required id="create-pass" type="password" class="validate">
+                    <label for="create-pass" >Create a Password</label>
+                  </div>
+              </div>
+
+            <div class="row no-gutters">
+                <div class="input-field col s12">
+                    <input minlength="8" maxlength="20" required id="create-pass" type="password" class="validate">
+                    <label for="create-pass" >Confirm Your Password</label>
+                  </div>
+              </div>
+
+            <div class="row no-gutters">
+              <button class="btn modal-trigger waves-effect waves-light btn-style" type="submit">Create Account</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+  <div id="modal-login" class="modal login width-40">
+  <div class="modal-content">
+          <div class="modal-title loginMT p-5">
+          <h5 class="modal-title authMT" id="ModalLongTitle">Welcome Back!</h5>
+          <button type="button" class="modal-close close_btn">
+            <span class="close_btn" aria-hidden="true">&times;</span>
+          </button>
+          </div>
+            <form action="" method="GET">
+
+            <div class="row no-gutters">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Registered Email</label>
+                  </div>
+            </div>
+                        
+            <div class="row no-gutters">
+                <div class="input-field col s12">
+                    <input minlength="8" maxlength="20" required id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                  </div>
+            </div>              
+
+                <div class="d-flex justify-content-center">
+                  <div >
+                  <button class="btn modal-trigger waves-effect waves-light btn-style" type="submit">Login</button>
+                  </div>
+                </div>                      
+
+              
+            </form>
+    </div>
+  </div>        
+  </header>
+
+  <!-- slidefromtop
+  slideInDown -->
+  <!-- Introduction section -->
+
+  <div class="row no-gutters">
+      <div class="col s12 m6 l6">
+      <div class="Main-heading MH ">
+               <div class="slide-down">
+                 <h2 class = "MH-h2 d-flex justify-content-center">Virtual</h2>
+                 <h1 class="MH-h1 d-flex justify-content-center">Messtaurant</h1>
+               </div>
+
+           <div class="MH-img-div  d-flex justify-content-center ">
+               <img src="images/hand.png" alt="" class="hand-img" />
+           </div>
+           
+         </div>
+   </div> 
+
+     <div class = "col s12 m6 l6 p-0">
+        <div class="main-text black container-fluid">
+        <div class="shade">
+          <div class="MT-content">
+          <div class="text-align-center">
+          <span>Why</span>
+          <h3>MESSTURANT</h3>
+          <div class="main-text-underline"></div>
+          </div>  
+          <div class="pt-5">
+          <h4><strong>Messtaurant</strong> is a great solution for your Boring,Unhealthy daily tiffin food. <strong>Messtaurant</strong> comes up with a High Quality,tasty food with a great service of Coustomizing your tiffin as per your needs and taste.</h4>
+          <br><br>
+          <h4>It also provides you a great variety of meals which you can easily order by a single tap on our app.</h4>
+          <br>
+          <p class="authorName">capids</p>
+        </div>
+        </div>
+      </div>
+     </div>
+     </div>
+
+      </div>
+   </div>
+   
+  
+      <!-- Icon Section -->
+    <div class="container-fluid icon-section">
+      <div>
+      <div class="row no-gutters">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="left-block p-3">
+              <h5>Good rest</h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur natus iure ipsum nam aliquam
+            </div>
+            <div class="left-block p-3">
+              <h5>Best cusin</h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, iusto. Quos illum recusandae atque</div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block black-shade p-3 main_ib " data-hoverimage="">
+            <div class="main-service-block black-shade" data-hoverimage="">
+              <div class="pt-3">
+                <span>Best-One</span>
+                <h4>Our Services</h4>
+                <div class="underline"></div>
+              </div>
+              <div class="main-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nostrum assumenda magni ducimus molestiae cumque ex quas unde, quae, culpa, voluptate saepe beatae qui quaerat quia blanditiis dolorem aliquid mollitia!Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              </div>
+              <div class="pb-3">
+              <a href="#">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="icon-block">
+              <div class="right-block p-3">
+                <h5>Good rest</h5>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur natus iure ipsum nam aliquam
+              </div>
+              <div class="right-block p-3">
+                <h5>Best cusin</h5>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, iusto. Quos illum recusandae atque</div>
+              </div>
+          </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Special-Items -->
+  
+  <div class="carousel carousel-slider center h-700">
+      
+      <div class="carousel-item SI-container white-text" href="#one!">
+          <div class="SI-container-shade">
+              <div class="SIC-row1">
+                  <span>BEST</span>
+                  <h4>Our Special Items</h4>
+                  <div class="underline"></div>
+              </div>
+              <div class="d-flex justify-content-center">
+                  <div class=" SI-card">
+                      <img src="images/menu/dish1.jpg" alt="">
+                      <div class="disp-card ">
+                        <div>
+                        <div class="d-flex justify-content-space-around theme-clr-text">
+                          <a href="#" class="dish-name theme-clr-text">Chole Bhature</a>
+                          <p>⭐⭐⭐⭐(3.8)</p>
+                        </div>
+                        <div class="theme-clr-text discription">
+                           ipsum dolor sit amet consectetur.
+                        </div>
+                        <div class="price theme-clr-text">
+                            ₹60
+                        </div>
+                      </div>
+                        <div class="cart-btn">
+                        <a class="waves-effect waves-light btn-small btn-style">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" SI-card">
+                     <img src="images/menu/dish2.jpg" alt="">
+                     <div class="disp-card ">
+                        <div class="d-flex justify-content-space-around theme-clr-text ">
+                            <a href="#" class="theme-clr-text dish-name">Chole Bhature</a>
+                            <p>⭐⭐⭐⭐(3.8)</p>
+                          </div>
+                          <div class="theme-clr-text discription">
+                             ipsum dolor sit amet consectetur.
+                          </div>
+                          <div class="price theme-clr-text">
+                              ₹60
+                          </div>
+                        <div class="cart-btn">
+                        <a class="waves-effect waves-light btn-small btn-style">Add to Cart</a>
+                        </div>
+                      </div>
+    
+                      </div>
+                      <div class="SI-card">
+                          <img src="images/menu/dish3.jpg" alt="">
+                          <div class="disp-card ">
+                              <div class="d-flex justify-content-space-around theme-clr-text ">
+                                  <a href="#" class="theme-clr-text dish-name">Chole Bhature</a>
+                                  <p>⭐⭐⭐⭐(3.8)</p>
+                                </div>
+                                <div class="theme-clr-text discription">
+                                   ipsum dolor sit amet consectetur.
+                                </div>
+                                <div class="price theme-clr-text">
+                                    ₹60
+                                </div>
+                              <div class="cart-btn">
+                              <a class="waves-effect waves-light btn-small btn-style">Add to Cart</a>
+                              </div>
+                            </div>
+                        </div>
+              </div>  
+          </div>  
+      </div>
+      <div class="carousel-item SI-container white-text" href="#two!">
+          <div class="SI-container-shade">
+              <div class="SIC-row1">
+                  <span>BEST</span>
+                  <h4>Our Special Items</h4>
+                  <div class="underline"></div>
+              </div>
+              <div class="d-flex justify-content-center">
+                  <div class=" SI-card">
+                      <img src="images/menu/dish4.jpg" alt="">
+                      <div class="disp-card ">
+                          <div class="d-flex justify-content-space-around theme-clr-text ">
+                              <a href="#" class="theme-clr-text dish-name">Chole Bhature</a>
+                              <p>⭐⭐⭐⭐(3.8)</p>
+                            </div>
+                            <div class="theme-clr-text discription">
+                               ipsum dolor sit amet consectetur.
+                            </div>
+                            <div class="price theme-clr-text">
+                                ₹60
+                            </div>
+                        <div class="cart-btn">
+                        <a class="waves-effect waves-light btn-small btn-style">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" SI-card">
+                        <img src="images/menu/dish5.jpg" alt="">
+                        <div class="disp-card ">
+                            <div class="d-flex justify-content-space-around theme-clr-text ">
+                                <a href="#" class="theme-clr-text dish-name">Chole Bhature</a>
+                                <p>⭐⭐⭐⭐(3.8)</p>
+                              </div>
+                              <div class="theme-clr-text discription">
+                                 ipsum dolor sit amet consectetur.
+                              </div>
+                              <div class="price theme-clr-text">
+                                  ₹60
+                              </div>
+                            <div class="cart-btn">
+                            <a class="waves-effect waves-light btn-small btn-style">Add to Cart</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="SI-card">
+                          <img src="images/menu/dish6.jpg" alt="">
+                          <div class="disp-card ">
+                              <div class="d-flex justify-content-space-around theme-clr-text ">
+                                  <a href="#" class="theme-clr-text dish-name">Chole Bhature</a>
+                                  <p>⭐⭐⭐⭐(3.8)</p>
+                                </div>
+                                <div class="theme-clr-text discription">
+                                   ipsum dolor sit amet consectetur.
+                                </div>
+                                <div class="price theme-clr-text">
+                                    ₹60
+                                </div>
+                              <div class="cart-btn">
+                              <a class="waves-effect waves-light btn-small btn-style">Add to Cart</a>
+                              </div>
+                            </div>                        
+                        </div>
+              </div>  
+          </div>  
+      </div>
+    </div>
+</div>
+
+<!-- Menu section -->
+
+ <div class="menu-container">
+   <div>
+     <div>
+        <div class="SIC-row1 text-align-center">
+            <span>Healthy & Tasty</span>
+            <h4>Our Food Menu</h4>
+            <div class="underline"></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit a ipsa, recusandae quae rep</p>
+        </div>
+        <div>
+          <div class="menu-bar d-flex justify-content-center">
+            <nav class="d-flex justify-content-center">
+              <img  src="images/tomato.jfif" alt="">
+              <div class="nav-wrapper d-flex align-items-center">
+                <ul class="">
+                  <li><a href="">Allitem</a></li>
+                  <li><a href="">breakfast</a></li>
+                  <li class="active"><a href="">lunch</a></li>
+                  <li><a href="">dinner</a></li>
+                  <li><a href="">sweets</a></li>
+                </ul>
+              </div>
+              <img src="images/gveg.jfif" alt="">
+            </nav>
+          </div>
+        </div>
+        <div>
+        <div class="row no-gutters">
+          <div class="col s12 m6 l6 menu">
+            <div class="menu-card d-flex menu-card-left">
+             <div class="menu-card-border">
+              <img src="images/tomato.jfif" alt="">
+            </div>
+            <div class="menu-card-border d-flex">
+              <div class="menu-disc ">
+              <h5>Chole bhature</h5>
+              <p>Veg</p>
+            </div>
+            <div class="price theme-clr-text menu-disc"> 
+              ₹60
+            </div>
+            </div>
+            </div>
+            
+            <div class="menu-card d-flex menu-card-left">
+              <div class="menu-card-border">
+               <img src="images/tomato.jfif" alt="">
+             </div>
+             <div class="menu-card-border d-flex">
+               <div class="menu-disc ">
+               <h5>Chole bhature</h5>
+               <p>Veg</p>
+             </div>
+             <div class="price theme-clr-text menu-disc"> 
+               ₹60
+             </div>
+             </div>
+             </div>
+
+             <div class="menu-card d-flex menu-card-left">
+              <div class="menu-card-border">
+               <img src="images/tomato.jfif" alt="">
+             </div>
+             <div class="menu-card-border d-flex">
+               <div class="menu-disc ">
+               <h5>Chole bhature</h5>
+               <p>Veg</p>
+             </div>
+             <div class="price theme-clr-text menu-disc"> 
+               ₹60
+             </div>
+             </div>
+             </div>
+
+             <div class="menu-card d-flex menu-card-left">
+              <div class="menu-card-border">
+               <img src="images/tomato.jfif" alt="">
+             </div>
+             <div class="menu-card-border d-flex">
+               <div class="menu-disc ">
+               <h5>Chole bhature</h5>
+               <p>Veg</p>
+             </div>
+             <div class="price theme-clr-text menu-disc"> 
+               ₹60
+             </div>
+             </div>
+             </div>
+          </div>
+
+          <div class="col s12 m6 l6 menu">
+            <div class="menu-card d-flex menu-card-right">
+             <div class="menu-card-border">
+              <img src="images/tomato.jfif" alt="">
+            </div>
+            <div class="menu-card-border d-flex">
+              <div class="menu-disc ">
+              <h5>Chole bhature</h5>
+              <p>Veg</p>
+            </div>
+            <div class="price theme-clr-text menu-disc"> 
+              ₹60
+            </div>
+            </div>
+            </div>
+            
+            <div class="menu-card d-flex menu-card-right">
+              <div class="menu-card-border">
+               <img src="images/tomato.jfif" alt="">
+             </div>
+             <div class="menu-card-border d-flex">
+               <div class="menu-disc ">
+               <h5>Chole bhature</h5>
+               <p>Veg</p>
+             </div>
+             <div class="price theme-clr-text menu-disc"> 
+               ₹60
+             </div>
+             </div>
+             </div>
+
+             <div class="menu-card d-flex menu-card-right">
+              <div class="menu-card-border">
+               <img src="images/tomato.jfif" alt="">
+             </div>
+             <div class="menu-card-border d-flex">
+               <div class="menu-disc ">
+               <h5>Chole bhature</h5>
+               <p>Veg</p>
+             </div>
+             <div class="price theme-clr-text menu-disc"> 
+               ₹60
+             </div>
+             </div>
+             </div>
+
+             <div class="menu-card d-flex menu-card-right">
+              <div class="menu-card-border">
+               <img src="images/tomato.jfif" alt="">
+             </div>
+             <div class="menu-card-border d-flex">
+               <div class="menu-disc ">
+               <h5>Chole bhature</h5>
+               <p>Veg</p>
+             </div>
+             <div class="price theme-clr-text menu-disc"> 
+               ₹60
+             </div>
+             </div>
+             </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+   </div>
+ </div>
+
+  <!-- why us -->
+  <div class="d-flex justify-content-center">
+    <div class="yus">
+      <div class="shade">
+        <div class="yus-content">
+        <div class="text-align-center">
+        <span>Why</span>
+        <h3>MESSTURANT</h3>
+        <div class="main-text-underline"></div>
+        </div>  
+        <div class="d-flex justify-content-center">
+        <div class="pt-5 yus-width">
+        <h4><strong>Messtaurant</strong> is a great solution for your Boring,Unhealthy daily tiffin food. <strong>Messtaurant</strong> comes up with a High Quality,tasty food with a great service of Coustomizing your tiffin as per your needs and taste.</h4>
+        <br>
+        <br>
+        <h4>It also provides you a great variety of meals which you can easily order by a single tap on our app.</h4>
+        <br>
+        <br>
+        <p class="authorName">capids</p>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- offer of the day -->
+
+  <div class="offer p-5">    
+      <div class="width-68 row no-gutters">
+    <div class="col s12 m6 l6">
+      <div class="offer-image p-4">
+      <img class="offer-item" src="images/biryaani.jfif" alt="">
+    </div>
+    </div>    
+      <div class="offer-details col s12 m6 l6">
+      <span>50% off for today</span>
+      <h4>our Veg Biryaani</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam ipsam, aut facere numquam, minus architecto iure, repellendus deleniti modi ratione adipisci illo mollitia quis a labore recusandae? Dolorum, eos.
+    <br><br>
+      <a data-target="" class="btn modal-trigger waves-effect waves-light btn contact_btn">Order Now</a>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Contact Section -->
+
+  <div class="contact">
+    <div class="d-flex justify-content-center p-5">
+      <div class=" row no-gutters">
+        <div class=" contact-card col s12 m3 l3">
+          <h3>contact us</h3>
+          <br>
+          <p>Email: Username@gmail.com</p>
+          <p>demo@gmail.com</p>
+          <br>
+          <p>Phone: 9939939939</p>
+        </div>
+        <div class="contact-card col s12 m3 l3">
+          <h3>open hours</h3>
+          <br>
+          <p>Lorem ipsum dolor sit amet odi refugiat suscipit es</p>
+          <br>
+          <p>Mon-Sun ......... 9AM-8PM</p>
+        </div>
+        <div class="contact-card col s12 m3 l3">
+          <h3>Social Media</h3>
+          <br>
+          <p>Do Follow --</p>
+          <a href="https://m.facebook.com/profile.php?id=100041722273216" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/capids/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/capids1" class="fa fa-twitter"></a>
+        </div>
+        <div class="contact-card col s12 m3 l3">
+          <h3>subscribe</h3>
+          <br>
+          <p>For more updates and more exciting offer</p>
+          <div class="">
+            <input id="" type="email" class="validate" required name="emailId" placeholder="Enter your email here">
+            <!-- <button class=" mt-1 btn contact_btn" type="submit" name="action">Subscribe
+              <i class="material-icons right">send</i>
+            </button> -->
+            <a data-target="" class="btn waves-effect waves-light btn contact_btn">subscribe <i class="fa fa-bell"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="footer-copyright">
+      <div class="container">
+        Copyright <i class="fa fa-copyright" aria-hidden="true"></i> CAPIDS 2019.All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>  
